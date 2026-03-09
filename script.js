@@ -29,3 +29,15 @@ for(let i=0; i<item.length; i++){
 }
 
 // getElementsByTagName
+
+const paragraphs=document.getElementsByTagName('p');
+
+const element=document.querySelector('.text');
+
+// document.querySelector("#title")
+// document.querySelector(".text")
+// document.querySelector("p")
+const elements=document.querySelectorAll('.text');
+elements.forEach(el=>{
+    console.log(el);
+})
