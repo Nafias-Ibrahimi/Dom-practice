@@ -73,4 +73,19 @@ item1.forEach(item =>{
     item.style.color='red';
 })
 
+const newDiv=document.createElement('div');
+newDiv.textContent='hello from js';
+document.body.appendChild(newDiv);
+
+document.body.prepend(newDiv);
+const parent = document.querySelector("#list");
+const ref = document.querySelector("#item2");
+const newItem = document.createElement("li");
+newItem.textContent = "Inserted Item";
+parent.insertBefore(newItem, ref);
+
+
+parent.removerChild(ref);
+document.querySelector('#item2').remove();
+
 
