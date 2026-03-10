@@ -124,6 +124,8 @@ console.log(title);
 const p=document.createElement('p');
 p.className='item';
 p.id='p-item';
+p.textContent=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nemo? Delectus, eum, ea mollitia voluptatem quo, aspernatur reprehenderit ipsa itaque rem soluta officia nesciunt qui expedita! Doloremque quam similique tempora.`;
+
 document.body.appendChild(p);
 
 document.getElementById('p-item');
@@ -138,6 +140,19 @@ const box=document.createElement('box');
 box.id='box1';
 document.body.appendChild(box);
 console.log(box.children);
+
+console.log(p.nextElementSibling);
+console.log(p.previousElementSibling);
+
+
+const element=document.createElement('element');
+
+console.log(element.innerHTML='<b>Hello Nafisa</b>');
+
+
+
+
+
 
 
 
