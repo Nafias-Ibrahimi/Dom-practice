@@ -256,11 +256,32 @@ window.addEventListener('scroll' , ()=>{
 });
 
 
-const input=document.createElement('input');
+const input = document.createElement('input');
+input.className = 'text';
+input.type = 'text';
+input.placeholder = 'enter the text';
 document.body.appendChild(input);
-input.addEventListener('change' , () =>{
-    console.log('input value changed:',input.value);
-})
+
+input.addEventListener('change', () => {
+    console.log('input value changed:', input.value);
+});
+
+   const btn = document.createElement('button');
+btn.textContent = 'Click Me';
+document.body.appendChild(btn);
+
+btn.addEventListener('click', (event) => {
+    console.log(event.type);  
+    console.log(event.target); 
+});
+
+function greet() {
+    alert('hi');
+}
+
+btn.addEventListener('click', greet);
+
+btn.removeEventListener('click', greet);
 
 
 
