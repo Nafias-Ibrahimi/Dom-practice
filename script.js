@@ -148,6 +148,33 @@ console.log(p.previousElementSibling);
 const element=document.createElement('element');
 
 console.log(element.innerHTML='<b>Hello Nafisa</b>');
+console.log(element.innerText='hello');
+console.log(element.textContent='hello my friends');
+
+
+element.setAttribute('href', 'https://google.com');
+console.log(element);
+
+// element.removeAttribute('href');
+
+element.classList.add('active');
+
+console.log(element.classList.remove('active'));
+
+console.log(element.classList.toggle('active'));
+
+element.style.color='red';
+element.style.background='black';
+element.style.fontSize='20px';
+
+
+
+
+
+
+
+
+
 
 
 
