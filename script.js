@@ -210,6 +210,34 @@ parent.addEventListener('click', () => {
   console.log('parent clicked');
 });
 
+button.addEventListener('click', e => {
+  console.log('event type:', e.type);
+  console.log('mouse X:', e.clientX); 
+  e.stopPropagation();
+});
+
+
+// 3️⃣ Event Delegation
+// یک event برای parent تعریف می‌کنیم.
+
+const list=document.createElement('ul');
+list.id='list';
+document.body.appendChild(list);
+
+for(let i=1; i<=3; i++){
+    const li=document.createElement('li');
+    li.textContent='Item ' +i;
+    list.appendChild(li);
+}
+
+document.querySelector('#list').addEventListener('click', e =>{
+    if(e.target.tagName === 'LI'){
+        console.log('item clicked');
+    }
+});
+
+
+
 
 
 
