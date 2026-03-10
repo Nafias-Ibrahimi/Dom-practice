@@ -253,9 +253,14 @@ document.body.prepend(newdiv);
 
 window.addEventListener('scroll' , ()=>{
     console.log('page is scrolling...');
+});
+
+
+const input=document.createElement('input');
+document.body.appendChild(input);
+input.addEventListener('change' , () =>{
+    console.log('input value changed:',input.value);
 })
-
-
 
 
 
