@@ -85,7 +85,40 @@ newItem.textContent = "Inserted Item";
 parent.insertBefore(newItem, ref);
 
 
-parent.removerChild(ref);
-document.querySelector('#item2').remove();
+// parent.removerChild(ref);
+// document.querySelector('#item2').remove();
+
+const element=document.createElement('element');
+element.addEventListener("mouseenter", () => {
+  console.log("Mouse entered");
+});
+
+element.addEventListener("mouseleave", () => {
+  console.log("Mouse left");
+});
+
+document.addEventListener("keydown", e => {
+  console.log(e.key);
+});
+
+document.addEventListener('keydown' , e =>{
+    console.log(e.key);
+})
+
+
+document.addEventListener('keydown' , e =>{
+    if(e.key==='enter'){
+        console.log('Enter pressed');
+    }
+})
+
+const h1=document.createElement('h1');
+h1.className='text';
+h1.id='title';
+
+const title=document.getElementById('title');
+console.log(title);
+
+
 
 
