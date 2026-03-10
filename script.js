@@ -167,54 +167,54 @@
 // element.style.background='black';
 // element.style.fontSize='20px';
 
- const div=document.createElement('div');
- div.innerText='Hello';
- div.className='div1';
- div.id='text';
- document.body.appendChild(div);
+//  const div=document.createElement('div');
+//  div.innerText='Hello';
+//  div.className='div1';
+//  div.id='text';
+//  document.body.appendChild(div);
 
 
-const button = document.createElement('button');
-button.textContent = 'Click Me';
-button.setAttribute('style', 'padding:20px; margin:20px; background:red;');
-document.body.appendChild(button);
+// const button = document.createElement('button');
+// button.textContent = 'Click Me';
+// button.setAttribute('style', 'padding:20px; margin:20px; background:red;');
+// document.body.appendChild(button);
 
-// ساخت parent و child
-const parent = document.createElement('div');
-parent.textContent = 'Parent';
-parent.style.border = '1px solid black';
-parent.style.padding = '20px';
+// // ساخت parent و child
+// const parent = document.createElement('div');
+// parent.textContent = 'Parent';
+// parent.style.border = '1px solid black';
+// parent.style.padding = '20px';
 
-const child = document.createElement('div');
-child.textContent = 'Child';
-child.style.background = 'lightblue';
-child.style.padding = '10px';
+// const child = document.createElement('div');
+// child.textContent = 'Child';
+// child.style.background = 'lightblue';
+// child.style.padding = '10px';
 
-parent.appendChild(child);
-document.body.appendChild(parent);
+// parent.appendChild(child);
+// document.body.appendChild(parent);
 
-// رویدادها
-button.addEventListener('click', () => {
-  console.log('button clicked');
-});
+// // رویدادها
+// button.addEventListener('click', () => {
+//   console.log('button clicked');
+// });
 
-document.addEventListener('keydown', e => {
-  console.log('key pressed:', e.key);
-});
+// document.addEventListener('keydown', e => {
+//   console.log('key pressed:', e.key);
+// });
 
-child.addEventListener('click', () => {
-  console.log('child clicked');
-});
+// child.addEventListener('click', () => {
+//   console.log('child clicked');
+// });
 
-parent.addEventListener('click', () => {
-  console.log('parent clicked');
-});
+// parent.addEventListener('click', () => {
+//   console.log('parent clicked');
+// });
 
-button.addEventListener('click', e => {
-  console.log('event type:', e.type);
-  console.log('mouse X:', e.clientX); 
-  e.stopPropagation();
-});
+// button.addEventListener('click', e => {
+//   console.log('event type:', e.type);
+//   console.log('mouse X:', e.clientX); 
+//   e.stopPropagation();
+// });
 
 
 // 3️⃣ Event Delegation
@@ -302,6 +302,23 @@ lists.addEventListener('click ', e =>{
     }
 });
 
+
+const parents = document.createElement('div');
+parents.textContent = 'Parent';
+parents.style.border = '1px solid black';
+parents.style.padding = '20px';
+
+const childs = document.createElement('div');
+childs.textContent = 'Child';
+childs.style.background = 'lightblue';
+childs.style.padding = '10px';
+
+parents.appendChild(childs);
+document.body.appendChild(parents);
+
+childs.addEventListener('click', () => {
+    console.log('Child click');
+});
 
 
 
