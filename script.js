@@ -112,60 +112,79 @@
 //     }
 // })
  
-const h1=document.createElement('h1');
-h1.className='text';
-h1.id='title';
-document.body.appendChild(h1);
+// const h1=document.createElement('h1');
+// h1.className='text';
+// h1.id='title';
+// document.body.appendChild(h1);
 
-const title=document.getElementById('title');
-console.log(title);
-
-
-const p=document.createElement('p');
-p.className='item';
-p.id='p-item';
-p.textContent=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nemo? Delectus, eum, ea mollitia voluptatem quo, aspernatur reprehenderit ipsa itaque rem soluta officia nesciunt qui expedita! Doloremque quam similique tempora.`;
-
-document.body.appendChild(p);
-
-document.getElementById('p-item');
-document.getElementsByClassName('item');
-document.querySelector('#p-item');
-document.querySelectorAll('.p-item');
-console.log('hello world');
-console.log(p.parentElement);
+// const title=document.getElementById('title');
+// console.log(title);
 
 
-const box=document.createElement('box');
-box.id='box1';
-document.body.appendChild(box);
-console.log(box.children);
+// const p=document.createElement('p');
+// p.className='item';
+// p.id='p-item';
+// p.textContent=`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nemo? Delectus, eum, ea mollitia voluptatem quo, aspernatur reprehenderit ipsa itaque rem soluta officia nesciunt qui expedita! Doloremque quam similique tempora.`;
 
-console.log(p.nextElementSibling);
-console.log(p.previousElementSibling);
+// document.body.appendChild(p);
+
+// document.getElementById('p-item');
+// document.getElementsByClassName('item');
+// document.querySelector('#p-item');
+// document.querySelectorAll('.p-item');
+// console.log('hello world');
+// console.log(p.parentElement);
 
 
-const element=document.createElement('element');
+// const box=document.createElement('box');
+// box.id='box1';
+// document.body.appendChild(box);
+// console.log(box.children);
 
-console.log(element.innerHTML='<b>Hello Nafisa</b>');
-console.log(element.innerText='hello');
-console.log(element.textContent='hello my friends');
+// console.log(p.nextElementSibling);
+// console.log(p.previousElementSibling);
 
 
-element.setAttribute('href', 'https://google.com');
-console.log(element);
+// const element=document.createElement('element');
 
-// element.removeAttribute('href');
+// console.log(element.innerHTML='<b>Hello Nafisa</b>');
+// console.log(element.innerText='hello');
+// console.log(element.textContent='hello my friends');
 
-element.classList.add('active');
 
-console.log(element.classList.remove('active'));
+// element.setAttribute('href', 'https://google.com');
+// console.log(element);
 
-console.log(element.classList.toggle('active'));
+// // element.removeAttribute('href');
 
-element.style.color='red';
-element.style.background='black';
-element.style.fontSize='20px';
+// element.classList.add('active');
+
+// console.log(element.classList.remove('active'));
+
+// console.log(element.classList.toggle('active'));
+
+// element.style.color='red';
+// element.style.background='black';
+// element.style.fontSize='20px';
+
+ const div=document.createElement('div');
+ div.innerText='Hello';
+ div.className='div1';
+ div.id='text';
+ document.body.appendChild(div);
+
+
+ const button=document.createElement('button');
+
+
+
+
+
+
+
+
+
+
 
 
 
