@@ -236,6 +236,25 @@ document.querySelector('#list').addEventListener('click', e =>{
     }
 });
 
+const fragment=document.createDocumentFragment();
+for(let i=0; i<10; i++){
+    const li=document.createElement('li');
+    fragment.appendChild(li);
+}
+list.appendChild(fragment);
+
+
+const newdiv=document.createElement('div');
+newdiv.textContent='hello from js';
+document.body.appendChild(newdiv);
+
+document.body.prepend(newdiv);
+
+
+window.addEventListener('scroll' , ()=>{
+    console.log('page is scrolling...');
+})
+
 
 
 
