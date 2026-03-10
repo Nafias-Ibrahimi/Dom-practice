@@ -284,7 +284,23 @@ btn.addEventListener('click', greet);
 btn.removeEventListener('click', greet);
 
 
+const lists=document.createElement('ul');
 
+lists.id='list';
+document.body.appendChild(lists);
+
+const items=['Item 1' ,'Item 2' ,'Item 3'];
+items.forEach(text =>{
+    const li =document.createElement('li');
+    li.textContent=text;
+    lists.appendChild(li);
+})
+
+lists.addEventListener('click ', e =>{
+    if(e.target.tagName === 'LI'){
+        console.log('Item clicked', e.target.textContent);
+    }
+});
 
 
 
