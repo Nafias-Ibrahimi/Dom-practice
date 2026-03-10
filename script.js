@@ -174,32 +174,41 @@
  document.body.appendChild(div);
 
 
- const button=document.createElement('button');
+const button = document.createElement('button');
+button.textContent = 'Click Me';
+button.setAttribute('style', 'padding:20px; margin:20px; background:red;');
+document.body.appendChild(button);
 
+// ساخت parent و child
+const parent = document.createElement('div');
+parent.textContent = 'Parent';
+parent.style.border = '1px solid black';
+parent.style.padding = '20px';
 
+const child = document.createElement('div');
+child.textContent = 'Child';
+child.style.background = 'lightblue';
+child.style.padding = '10px';
 
+parent.appendChild(child);
+document.body.appendChild(parent);
 
+// رویدادها
+button.addEventListener('click', () => {
+  console.log('button clicked');
+});
 
+document.addEventListener('keydown', e => {
+  console.log('key pressed:', e.key);
+});
 
+child.addEventListener('click', () => {
+  console.log('child clicked');
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+parent.addEventListener('click', () => {
+  console.log('parent clicked');
+});
 
 
 
